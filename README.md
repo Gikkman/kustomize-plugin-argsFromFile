@@ -12,3 +12,6 @@ So to install the plugin: clone this repo, open a shell in the repo root and run
 To run kustomize with a plugin, we need to also pass the `--enable-alpha-plugins` flag. So to execute the kustomize build here, we'd run:
 
 `kustomize build --enable-alpha-plugins kustomize/base`
+
+# Problem
+The issue with this plugin is that it reports that it cannot find the file `sed-input.txt` in the `kustomize/base` folder. But the file reporting specifying the `sed-input.txt` resides in the `kustomize/transformers` folder, so I would expect kustomize to look for the file inside that folder.
