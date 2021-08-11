@@ -1,0 +1,6 @@
+apiVersion: myteam/v1
+kind: SedTransformer
+metadata:
+  name: not-really-used
+argsOneLiner: s/HELLO/WORLD/g
+argsFromFile: sed-input.txt
