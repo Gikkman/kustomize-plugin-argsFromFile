@@ -1,0 +1,2 @@
+s/SERVER/MyAwsomeServer/g
+s/CLUSTER/SomeoneElsesCluster/g
